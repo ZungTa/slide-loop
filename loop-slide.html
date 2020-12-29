@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="car-wrap">
+      <div class="car">
+        <div class="item">ITEM 1</div>
+        <div class="item">ITEM 2</div>
+        <div class="item">ITEM 3</div>
+        <div class="item">ITEM 4</div>
+        <div class="item">ITEM 5</div>
+        <div class="item">ITEM 6</div>
+        <div class="item">ITEM 1</div>
+        <div class="item">ITEM 2</div>
+        <div class="item">ITEM 3</div>
+        <div class="item">ITEM 4</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<script>
+
+</script>
+
+<style>
+  .container {
+    padding: 200px 50px;
+  }
+
+  .car-wrap {
+    width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+  }
+
+  .car {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 300%;
+    animation: slideshow2 4s linear infinite;
+  }
+
+  .item {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    margin-right: 2rem;
+  }
+
+  @keyframes slideshow {
+    0% {
+      left: 0;
+    }
+
+    100% {
+      left: -200%;
+    }
+  }
+
+  @keyframes slideshow2 {
+    100% {
+      transform: translateX(-60%);
+    }
+  }
+</style>
